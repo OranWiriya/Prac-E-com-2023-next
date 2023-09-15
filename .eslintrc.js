@@ -4,6 +4,13 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.png'], // Include '.png'
+      },
+    },
+  },
   rules: {
     'react/function-component-definition': [
       2,
