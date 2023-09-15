@@ -1,6 +1,6 @@
 'use client';
 
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 const theme = createTheme({
   typography: {
@@ -51,8 +51,33 @@ const theme = createTheme({
       defaultProps: {
         color: '#342120',
       },
+      styleOverrides: {
+        h1: {
+          fontSize: '2rem',
+          '@media (min-width: 600px)': {
+            fontSize: '3rem',
+          },
+          '@media (min-width: 1024px)': {
+            fontSize: '6rem',
+          },
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        outlined: {
+          borderColor: '#8E5B40',
+          color: '#8E5B40',
+          ':hover': {
+            color: '#C9AB88',
+          },
+        },
+        text: {
+          color: '#8E5B40',
+        },
+      },
     },
   },
 });
 
-export default theme;
+export default responsiveFontSizes(theme);
