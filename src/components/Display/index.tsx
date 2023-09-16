@@ -12,7 +12,7 @@ function Display() {
         <Typography variant="h1" fontFamily="serif">
           {displayText}
         </Typography>
-        <Typography variant='h5'>{displayText2}</Typography>
+        <Typography variant="h5">{displayText2}</Typography>
       </Box>
       <Box
         className="overflow-hidden lg:min-w-[440px] lg:min-h-[560px] min-w-[300px] h-[420px] bg-[#C9AB88] 
