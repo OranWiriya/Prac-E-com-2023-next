@@ -1,4 +1,4 @@
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { Box, CssBaseline, ThemeProvider } from '@mui/material';
 import './globals.css';
 import type { Metadata } from 'next';
 import theme from '@/config-mui/theme';
@@ -16,8 +16,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CssBaseline />
         <body>
           <Navbar />
-          {children}
-          </body>
+          <Box className="space-y-32">{children}</Box>
+        </body>
       </ThemeProvider>
     </html>
   );
