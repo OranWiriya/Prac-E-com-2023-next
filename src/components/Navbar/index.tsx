@@ -1,6 +1,6 @@
 'use client';
 
-import ShoppingIcon from '@/icons/shoppingIcon';
+import ShoppingIcon from '@/components/Assets/icons/shoppingIcon';
 import { AppBar, Box, Button, IconButton, List, ListItem, Toolbar, Typography } from '@mui/material';
 
 function Navbar({ cart = true }) {
