@@ -15,8 +15,8 @@ function Navbar({ cart = true }) {
         <Box className="flex-grow pl-10 max-w-lg">
           <List>
             {navItem.map((item) => (
-              <ListItem disableGutters style={{ display: 'inline' }}>
-                <Button key={item}>{item}</Button>
+              <ListItem disableGutters style={{ display: 'inline' }} key={item}>
+                <Button key={item} className='hover:underline'>{item}</Button>
               </ListItem>
             ))}
           </List>
