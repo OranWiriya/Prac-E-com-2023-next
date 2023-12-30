@@ -28,8 +28,8 @@ function MainContent() {
       <Box className="min-h-screen">
         <List className="flex gap-x-8 gap-y-10 flex-wrap xl:flex-nowrap xl:gap-x-12 xl:gap-y-0">
           {imageBestSelling.map((item, index) => (
-            <Box className="flex flex-col space-y-10 w-full">
-              <ListItem className="bg-[#C9AB88] rounded-3xl p-0 overflow-hidden hover:bg-[#9c856a] hover:transition-all ease-in-out duration-300">
+            <Box className="flex flex-col space-y-10 w-full items-center">
+              <ListItem className="bg-[#C9AB88] rounded-3xl p-0 w-fit overflow-hidden hover:bg-[#9c856a] hover:transition-all ease-in-out duration-300">
                 <Image src={item.img} alt={`${item}`} key={index} className="w-[380px] h-[516px] hover:scale-105 hover:transition-all ease-in-out duration-300" />
               </ListItem>
               <Box className="space-y-3">
